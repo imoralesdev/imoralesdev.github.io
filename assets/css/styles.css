@@ -47,9 +47,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 0 0 0.2em 0;
   color: #282B39;
+  font-weight: 800;
 }
 
 .content {
@@ -59,13 +60,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: #282B39;
 }
 
+.content > h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
 .content > p {
   font-size: 16px;
   padding: 1em;
   line-height: 1.4;
 }
 
-.content > code {
+.content__code {
   display: inline-block;
   background: hsl(1, 100%, 72%);
   padding: 0 6px;
