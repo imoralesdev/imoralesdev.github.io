@@ -20,11 +20,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .main__left {
-  position: fixed;
-  width: 30%;
+  display: block;
+  width: 100%;
   height: 100%;
   min-height: 150px;
-  float: left;
   background-color: #115588;
   text-align: center;
   color: #ffffff;
@@ -34,9 +33,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .main__right {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 100%;
-  float: right;
   background-color: #ffffff;
   padding: 4%;
   font-family: 'Open Sans', sans-serif;
@@ -103,4 +101,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .content > ul li {
   padding: 0 0 0.2em;
   font-size: 16px;
+}
+
+/* This applies from 600px onwards */
+@media (min-width: 600px) {
+  .main__left {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    min-height: 150px;
+    float: left;
+    background-color: #115588;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+  }
+  
+  .main__right {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
+    background-color: #ffffff;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    color: #282B39;
+  }
 }
