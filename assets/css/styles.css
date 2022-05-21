@@ -58,3 +58,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   line-height: 1;
   color: #282B39;
 }
+
+.content > p {
+  font-size: 16px;
+  padding: 1em;
+  line-height: 1.4;
+}
+
+.content > code {
+  display: inline-block;
+  background: hsl(1, 100%, 72%);
+  padding: 0 6px;
+  color: #282b39;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.content > ul {
+  font-size: 16px;
+  padding: 1em 2em;
+  list-style-type: square;
+}
+
+.content > ul li {
+  padding: 0 0 0.2em;
+}
