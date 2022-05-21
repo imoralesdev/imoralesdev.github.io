@@ -8,7 +8,7 @@ El valor de una variable es una entidad individual del programa, el proceso de p
 
 ## Definicion de variables
 
-Para definir una variable utilizamos la palabra reservada `var` esto es en el caso que utilicemos la version ECMAScript 5 de JavaScript, `const` o `let` en el caso que estemos utilizando la version JavaScript ECMAScript 6 o ECMAScript 7.
+Para definir una variable utilizamos la palabra reservada <span class="content__code">var</span> esto es en el caso que utilicemos la version ECMAScript 5 de JavaScript, `const` o `let` en el caso que estemos utilizando la version JavaScript ECMAScript 6 o ECMAScript 7.
 
 - `var`
 
