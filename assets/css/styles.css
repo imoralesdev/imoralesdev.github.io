@@ -29,6 +29,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-align: center;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
+  color: #FFF;
 }
 
 .main__right {
@@ -39,6 +40,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-color: #ffffff;
   padding: 4%;
   font-family: 'Open Sans', sans-serif;
+  color: #282B39;
 }
 
 .main__title {
@@ -47,9 +49,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   padding: 0 0 0.2em 0;
+  color: #282B39;
 }
 
 .content {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  line-height: 1;
+  color: #282B39;
 }
