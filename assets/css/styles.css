@@ -28,6 +28,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-color: #115588;
   text-align: center;
   color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main__right {
@@ -35,5 +36,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   width: 70%;
   height: 100%;
   float: right;
-  background-color: #ffffff;	
+  background-color: #ffffff;
+  padding: 4%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main__title {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  padding: 0 0 0.2em 0;
+}
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
 }
