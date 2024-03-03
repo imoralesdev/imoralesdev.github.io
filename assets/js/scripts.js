@@ -1,6 +1,6 @@
 console.log("JavaScript Load");
 
-let canvas = document.querySelector('hero_canvas');
+let canvas = document.querySelector('#hero_canvas');
 let ctx = canvas.getContext('2d');
 
 class Pixel {
