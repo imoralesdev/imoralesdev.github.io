@@ -82,6 +82,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 100%;
 }
 
+.hero__grid-row-header {
+    height: 60px;
+}
+
 .hero__grid-top-left {
   border-bottom-width: 1px;
     border-color: rgba(203, 213, 225, .2);
