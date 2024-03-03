@@ -83,6 +83,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .hero__grid-row-header {
     height: 60px;
+    flex: none;
+}
+
+.hero__grid-row-middle {
+    height: 60px;
+    flex: 1 0 0px;
 }
 
 .hero__grid-top-left {
@@ -134,7 +140,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .hero__grid-row {
       align-items: center;
     display: flex;
-    flex: 1 0 0px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
