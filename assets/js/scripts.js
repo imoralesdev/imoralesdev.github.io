@@ -1,6 +1,6 @@
 console.log("JavaScript Load");
 
-var canvas = document.querySelector('#hero_canvas'); // Added '#' for ID selector
+var canvas = document.getElementById('hero_canvas'); // Added '#' for ID selector
 var ctx = canvas.getContext('2d');
 
 function Pixel(x, y) {
