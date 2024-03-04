@@ -237,6 +237,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .hero__grid-middle-pivot-top::after {
+    content: ' ';
       background-color: rgb(128, 131, 141);
     height: 100%;
     width: 100%;
