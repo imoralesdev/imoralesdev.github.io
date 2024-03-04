@@ -202,6 +202,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   height: 100%;
 }
 
+.hero__image {
+  z-index: 1;
+}
+
+.hero__description {
+  z-index: 1;
+}
+
 .content {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
