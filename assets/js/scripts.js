@@ -58,11 +58,4 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-// Event listener for window resize
-window.addEventListener('resize', function() {
-  //setCanvasSize();
-  // Redraw the current frame to adjust to the new size
-  animate();
-});
-
 animate();
