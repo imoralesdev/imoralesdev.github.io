@@ -7,7 +7,8 @@
 
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   background: #18191B;
   color: #FFF;
 }
@@ -208,6 +209,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .hero__description {
   z-index: 1;
+}
+
+.hero__header {
+  font-size: 72px;
+}
+
+.hero__text {
+      font-size: 22px;
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 .content {
