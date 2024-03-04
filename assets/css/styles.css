@@ -173,7 +173,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     flex: none;
     height: 100%;
     position: relative;
-    width: 1080px;
+    width: auto;
 }
 
 .hero__grid-middle-right {
