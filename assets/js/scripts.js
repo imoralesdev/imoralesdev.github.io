@@ -26,13 +26,14 @@ function animate() {
 
 animate();
 */
-var canvas = document.getElementById('hero_canvas_container');
+var canvas = document.getElementById('hero_canvas');
 var ctx = canvas.getContext('2d');
+var container = document.getElementById('hero_canvas_container'); // Replace with the actual ID of your container
 
-// Function to set canvas size
+// Function to set canvas size based on the container
 function setCanvasSize() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width = container.clientWidth; // use clientWidth to get the inner width of the element
+  canvas.height = container.clientHeight; // use clientHeight to get the inner height of the element
 }
 
 // Initial canvas size set
@@ -58,7 +59,8 @@ function animate() {
 // Event listener for window resize
 window.addEventListener('resize', function() {
   setCanvasSize();
-  // You might want to call animate() here if the animation stops on resize
+  // Redraw the current frame to adjust to the new size
+  animate();
 });
 
 animate();
