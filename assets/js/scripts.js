@@ -7,9 +7,10 @@ var ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-function Pixel(x, y) {
+function Pixel(x, y, size) {
   this.x = x;
   this.y = y;
+  this.size = size;
   this.hue = Math.floor(Math.random() * 360);
   var direction = Math.random() > 0.5 ? -1 : 1;
   this.velocity = (Math.random() * 30 + 20) * 0.01 * direction;
@@ -17,7 +18,7 @@ function Pixel(x, y) {
 
 Pixel.prototype.update = function() {
   this.hue += this.velocity;
-  // Reset the hue to keep it within the 0-360 range
+  // Keep the hue within the 0-360 range
   if (this.hue > 360) this.hue -= 360;
   if (this.hue < 0) this.hue += 360;
 };
@@ -25,14 +26,15 @@ Pixel.prototype.update = function() {
 Pixel.prototype.render = function(ctx) {
   var hue = Math.round(this.hue);
   ctx.fillStyle = 'hsl(' + hue + ', 100%, 50%)';
-  ctx.fillRect(this.x, this.y, 1, 1); // Size of each pixel is 1x1
+  ctx.fillRect(this.x, this.y, this.size, this.size);
 };
 
-// Generate pixels for the entire canvas
+// Generate a smaller number of larger pixels for performance
 var pixels = [];
-for (var y = 0; y < canvas.height; y++) {
-  for (var x = 0; x < canvas.width; x++) {
-    pixels.push(new Pixel(x, y));
+var pixelSize = 10; // Adjust pixel size as needed for performance
+for (var y = 0; y < canvas.height; y += pixelSize) {
+  for (var x = 0; x < canvas.width; x += pixelSize) {
+    pixels.push(new Pixel(x, y, pixelSize));
   }
 }
 
