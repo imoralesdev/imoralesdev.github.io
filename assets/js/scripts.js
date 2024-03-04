@@ -31,6 +31,7 @@ var ctx = canvas.getContext('2d');
 var container = document.getElementById('hero_canvas_container'); // Replace with the actual ID of your container
 
 // Function to set canvas size based on the container
+/*
 function setCanvasSize() {
   canvas.width = container.clientWidth; // use clientWidth to get the inner width of the element
   canvas.height = container.clientHeight; // use clientHeight to get the inner height of the element
@@ -38,6 +39,7 @@ function setCanvasSize() {
 
 // Initial canvas size set
 setCanvasSize();
+*/
 
 var hue = 0;
 var velocity = 0.1; // Speed of hue change
@@ -58,7 +60,7 @@ function animate() {
 
 // Event listener for window resize
 window.addEventListener('resize', function() {
-  setCanvasSize();
+  //setCanvasSize();
   // Redraw the current frame to adjust to the new size
   animate();
 });
