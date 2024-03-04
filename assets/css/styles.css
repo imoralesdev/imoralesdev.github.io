@@ -226,6 +226,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: auto;
 }
 
+.hero__grid-middle-pivot-top {
+      flex: none;
+    height: 5px;
+    left: -3px;
+    position: absolute;
+    top: -3px;
+    width: 5px;
+    z-index: 1;
+}
+
+.hero__grid-middle-pivot-top::after {
+      background-color: rgb(128, 131, 141);
+    height: 100%;
+    width: 100%;
+    border-radius: 99px;
+    box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+    opacity: 1;
+}
+
 .content {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
