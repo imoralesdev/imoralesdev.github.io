@@ -3,6 +3,9 @@ console.log("JavaScript Load");
 var canvas = document.getElementById('hero_canvas_container');
 var ctx = canvas.getContext('2d');
 
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
 function Pixel( x, y ) {
   this.x = x;
   this.y = y;
