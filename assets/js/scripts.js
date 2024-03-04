@@ -1,6 +1,6 @@
 console.log("JavaScript Load");
 
-var canvas = document.querySelector('canvas');
+var canvas = document.getElementById('hero_canvas_container');
 var ctx = canvas.getContext('2d');
 
 // Set canvas to full width and height of the window
