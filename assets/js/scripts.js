@@ -1,6 +1,6 @@
 console.log("JavaScript Load");
 
-var container = document.getElementById('canvasContainer');
+var container = document.getElementById('hero_canvas_container');
 var canvas = document.createElement('canvas');
 var ctx = canvas.getContext('2d');
 
