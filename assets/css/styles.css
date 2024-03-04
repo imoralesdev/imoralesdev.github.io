@@ -227,23 +227,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .hero__grid-middle-pivot-top {
-      flex: none;
-    height: 5px;
+    flex: none;
+    height: 3px;
     left: -3px;
     position: absolute;
-    top: -3px;
-    width: 5px;
+    top: -13px;
+    width: 3px;
     z-index: 1;
 }
 
 .hero__grid-middle-pivot-top::after {
     content: ' ';
-      background-color: rgb(128, 131, 141);
+    background-color: rgb(128, 131, 141);
     height: 100%;
     width: 100%;
-    border-radius: 99px;
-    box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px 2px rgb(128, 131, 141);
     opacity: 1;
+    display: inline-block;
 }
 
 .content {
