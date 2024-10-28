@@ -1,3 +1,9 @@
+---
+title: CSS Tutorials
+permalink: /css/
+layout: default  # Adjust based on your layout structure
+---
+
 # CSS Tutorials
 
 - [Introduction to CSS](00-intro)
