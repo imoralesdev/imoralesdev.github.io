@@ -36,6 +36,9 @@ collections:
   python:
     output: true
     permalink: /python/:path/
+  herramientas:
+    output: true
+    permalink: /herramientas/:path/
 
 # Disqus for Comments (if using Disqus)
 disqus: # Add your Disqus shortname here
