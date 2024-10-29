@@ -1,0 +1,32 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <!-- Header content here -->
+    </header>
+    <div class="content-wrapper">
+      {% if page.collection == "herramientas" %}
+        {% include sidebar-css.html %}
+      {% elsif page.collection == "css" %}
+        {% include sidebar-css.html %}
+      {% elsif page.collection == "javascript" %}
+        {% include sidebar-javascript.html %}
+      {% else %}
+        {% include sidebar-general.html %} <!-- A general sidebar if needed -->
+      {% endif %}
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    <footer>
+      <!-- Footer content here -->
+    </footer>
+  </body>
+</html>
