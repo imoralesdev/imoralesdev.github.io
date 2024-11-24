@@ -22,12 +22,12 @@
     />
     <link
       rel="stylesheet"
-      href="{{ site.baseurl }}/assets/css/code-block-styles.css"
+      href="/assets/css/code-block-styles.css"
     />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>Israel Morales - Software Engineer | {{ page.title }}</title>
+    <title>Israel Morales - Software Engineer | CSS Tutorials</title>
   </head>
   <body>
     <div class="wrapper">
@@ -35,17 +35,31 @@
       <main class="main main-blog">
         <article>
           <header class="blog-title-wrapper">
-            <div class="blog-title"><h1>{{ page.title }}</h1></div>
+            <div class="blog-title"><h1>CSS Tutorials</h1></div>
           </header>
           <div class="blog">
             <dl class="blog-desc-list">
-              {% if page.collection == "herramientas" %} {% include
-              sidebar-herramientas.html %} {% elsif page.collection == "css" %}
-              {% include sidebar-css.html %} {% elsif page.collection ==
-              "javascript" %} {% include sidebar-javascript.html %} {% else %}
-              {% include sidebar-general.html %} {% endif %}
+              
+              <!-- sidebar-css.html -->
+<aside class="sidebar">
+    <h2>CSS Tutorials</h2>
+    <ul>
+        <li><a href="/css/00-intro">Introduction to CSS</a></li>
+        <li><a href="/css/01-selectors">CSS Selectors</a></li>
+        <li><a href="/css/02-box-model">CSS Box Model</a></li>
+        <!-- Add more CSS tutorials here -->
+    </ul>
+</aside>
+ 
             </dl>
-            <div class="blog-content">{{ content }}</div>
+            <div class="blog-content"><h1 id="css-tutorials">CSS Tutorials</h1>
+
+<ul>
+  <li><a href="00-intro">Introduction to CSS</a></li>
+  <li><a href="01-selectors">CSS Selectors</a></li>
+  <li><a href="02-box-model">CSS Box Model</a></li>
+</ul>
+</div>
           </div>
         </article>
       </main>
