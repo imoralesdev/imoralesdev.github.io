@@ -298,7 +298,7 @@ img.sidebar-author {
 .portfolio__grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .portfolio__card {
@@ -321,6 +321,7 @@ img.sidebar-author {
   position: absolute;
   top: 0;
   width: 100%;
+  height: 100%;
 }
 
 .portfolio__name {
@@ -347,6 +348,8 @@ img.sidebar-author {
   color: #f9f9f9;
   padding: 16px;
   text-decoration: none;
+  display: block;
+  margin: 0 0 12px;
 }
 
 .blog-post__name {
@@ -387,6 +390,10 @@ img.sidebar-author {
   .blog ol,
   .blog ul {
     flex-direction: row;
+  }
+
+  .portfolio__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sidebar-author {
