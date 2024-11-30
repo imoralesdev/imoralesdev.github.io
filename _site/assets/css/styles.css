@@ -337,6 +337,27 @@ img.sidebar-author {
   overflow: hidden;
 }
 
+.portfolio__stack {
+  font-size: 15px;
+  padding: 16px 0 0;
+}
+
+.portfolio__stack-list {
+  font-weight: 900;
+}
+
+.portfolio__stack-link {
+  font-weight: 900;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 10px 14px 0 0;
+  display: inline-block;
+}
+
+.portfolio__stack-link:hover {
+  color: #fee17d;
+}
+
 .blog-post {
   display: flex;
   flex-direction: column;
