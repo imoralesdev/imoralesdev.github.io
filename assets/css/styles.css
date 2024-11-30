@@ -340,6 +340,7 @@ img.sidebar-author {
 .portfolio__stack {
   font-size: 15px;
   padding: 16px 0 0;
+  font-style: italic;
 }
 
 .portfolio__stack-list {
